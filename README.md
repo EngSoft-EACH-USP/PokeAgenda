@@ -1,5 +1,7 @@
 # Engenharia-de-Software
 8641921-Matheus S Silva
+Matheus P. Pinheiro
+Alexander
 
 
 ![alt tag](https://travis-ci.org/stat2008/Engenharia-de-Software.svg?branch=master)
