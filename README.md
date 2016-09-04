@@ -1,7 +1,7 @@
 # Engenharia-de-Software
-8641921-Matheus S Silva
-Matheus P. Pinheiro
-Alexander
+8641921 - Matheus S Silva
+8623799 - Matheus P. Pinheiro
+8598707 - Alexsander Yokoyama
 
 
 ![alt tag](https://travis-ci.org/stat2008/Engenharia-de-Software.svg?branch=master)
