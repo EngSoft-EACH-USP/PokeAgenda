@@ -1,4 +1,7 @@
 # Engenharia-de-Software
+
+Projeto PokéAgenda: Um repositório da localização de 'nests' do aplicativo mobile Pokemón Go da Niantic. A PokéAgenda será um website onde usuários poderão consultar a localização dos 'nests' e quais pokémons aparecem neles, assim como adicionar comentários e avaliar a informação disponível sobre cada 'nest'.  
+
 8641921 - Matheus S Silva  
 8623799 - Matheus P. Pinheiro  
 8598707 - Alexsander Yokoyama  
