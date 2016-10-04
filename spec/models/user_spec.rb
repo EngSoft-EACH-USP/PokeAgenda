@@ -1,5 +1,10 @@
 require 'rails_helper'
 
-RSpec.describe User, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+describe User, type: :model do
+  it "validate presence of :email" do
+    expect(User.new(email: nil)).not_to be_valid
+  end
+  it "validate presence of :encrypted_password" do
+    expect(User.new(encrypted_password: nil)).not_to be_valid
+  end
 end
