@@ -25,4 +25,19 @@ context "As a user", type: :request do
 
     expect(page).to have_content "logout"
   end
+
+  specify "I want to logout my self" do
+    user = FactoryGirl.create(:user, password: "123123", password_confirmation: "123123")
+
+    visit new_user_session_path
+
+    fill_in "user_email", with: user.email
+    fill_in "user_password", with: "123123"
+
+    click_button "Log in"
+
+    click_link "logout"
+
+    expect(page).not_to have_content "logout"
+  end
 end
