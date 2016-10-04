@@ -1,7 +1,6 @@
 class ApplicationController < ActionController::Base
 
   def helloworld
-    byebug
     render html: "Hello, world!"
   end
 
