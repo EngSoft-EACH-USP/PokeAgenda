@@ -5,7 +5,7 @@ Projeto PokéAgenda: Um repositório da localização de 'nests' do aplicativo m
 8641921 - Matheus S Silva  
 8623799 - Matheus P. Pinheiro  
 8598707 - Alexsander Yokoyama  
-8921155 - Henrique Okomura
+8921155 - Henrique Okomura  
 8921687 - Lucas Saccumann Miranda
 
 ![alt tag](https://travis-ci.org/stat2008/Engenharia-de-Software.svg?branch=master)
