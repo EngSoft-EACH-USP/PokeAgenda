@@ -1,6 +1,6 @@
 class ApplicationController < ActionController::Base
-
-  def helloworld
+  layout false
+  def index
   end
 
   protect_from_forgery with: :exception
