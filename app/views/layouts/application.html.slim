@@ -1,0 +1,35 @@
+doctype html
+html dir="ltr" lang="pt"
+  head
+    meta content=("text/html; charset=UTF-8") http-equiv="Content-Type" /
+    title PokéAgenda
+    = csrf_meta_tags
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+  body
+    .wrapper.row1
+      header#header.clear
+        #hgroup
+          h1
+            = link_to "PokéAgenda", root_path
+        nav
+          ul
+            - if current_user.present?
+              li
+                |Olá,&nbsp;
+                = current_user.email
+              li
+                = link_to "Sair", destroy_user_session_path, method: :delete
+            - else
+              li
+                = link_to "Entrar", new_user_session_path, class: "cpy-login-link"
+              li
+                = link_to "Criar conta", new_user_registration_path
+
+    .wrapper.row2
+      = yield
+
+    .wrapper.row3
+      footer#footer.clear
+        p.fl_left
+          | PokéAgenda © 2016 - Todos os Direitos Reservados.
