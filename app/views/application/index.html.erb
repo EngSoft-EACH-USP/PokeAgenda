@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt" dir="ltr">
 <head>
-<title>PokeAgenda</title>
-<meta charset="utf-8">
-<%= javascript_include_tag "application" %>
-<link rel="stylesheet" href="styles/layout.css" type="text/css">
+  <title>PokeAgenda</title>
+  <%= csrf_meta_tags %>
+
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
 </head>
 <body>
 <div class="wrapper row1">
@@ -19,11 +21,11 @@
             <%= current_user.email%>
           </li>
           <li>
-            <%= link_to "Sair", "", method: :delete %>
+            <%= link_to "Sair", destroy_user_session_path, method: :delete %>
           </li>
         <% else %>
           <li>
-            <%= link_to "Entrar", new_user_session_path%>
+            <%= link_to "Entrar", new_user_session_path, class: "cpy-login-link"%>
           </li>
           <li>
             <%= link_to "Criar conta", new_user_registration_path%>
