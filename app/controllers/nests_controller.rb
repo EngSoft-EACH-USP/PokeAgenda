@@ -1,4 +1,5 @@
 class NestsController < ApplicationController
+  before_action :authenticate_user!
 
   def new
     @nest = Nest.new

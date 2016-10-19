@@ -27,9 +27,8 @@ context "As a user", type: :request do
         visit new_nest_path
       end
 
-      specify "the nest is registered" do
+      specify "the nest is not registered" do
         expect { click_button "Salvar" }.not_to change { Nest.count }
-        byebug
         expect(page).to have_content "can't be blank"
       end
     end
