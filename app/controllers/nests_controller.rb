@@ -1,5 +1,9 @@
 class NestsController < ApplicationController
   before_action :authenticate_user!
+  
+  def index
+    @nests = Nest.order(:address)
+  end
 
   def new
     @nest = Nest.new
