@@ -1,0 +1,14 @@
+h2 Nests
+table.table
+    thead
+        td Id
+        td Address
+    tbody
+        - @nests.each do |nest|
+            tr
+                td
+                    = nest.id
+                td
+                    = nest.address
+
+            

@@ -1,0 +1,18 @@
+<div class="large-9 small-12 column">
+  <h2>
+    ID NEST: <%= @nest.id %>
+    <!-- TODO: Exibir nomes dos pokemons neste nest-->
+  </h2>
+  
+  <p>Localização: <%= @nest.address %></p>
+  
+  <div class="row">
+    <div class="small-2 large-4 columns">
+    <% if current_user %>
+      Nota do nest: <%= rating_for @nest, "score", disable_after_rate: false, half_show: true, enable_half: true, star: 5%>
+      <br>
+    <% end %>
+    </div>
+  </div>
+  
+</div>

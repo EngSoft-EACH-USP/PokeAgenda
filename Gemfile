@@ -17,6 +17,7 @@ gem 'coffee-rails', '~> 4.2'
 gem 'factory_girl_rails'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
+gem 'ratyrate'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
