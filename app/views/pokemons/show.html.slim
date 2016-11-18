@@ -1,0 +1,12 @@
+p#notice = notice
+
+p
+  strong Name:
+  = @pokemon.name
+p
+  strong Number:
+  = @pokemon.number
+
+= link_to 'Edit', edit_pokemon_path(@pokemon)
+'|
+= link_to 'Back', pokemons_path
