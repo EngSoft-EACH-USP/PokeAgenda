@@ -52,20 +52,6 @@ RSpec.describe PokemonsController, type: :controller do
     end
   end
 
-  describe "GET #new" do
-    it "assigns a new pokemon as @pokemon" do
-      get :new, params: {}, session: valid_session
-      expect(assigns(:pokemon)).to be_a_new(Pokemon)
-    end
-  end
-
-  describe "GET #edit" do
-    it "assigns the requested pokemon as @pokemon" do
-      pokemon = Pokemon.create! valid_attributes
-      get :edit, params: {id: pokemon.to_param}, session: valid_session
-      expect(assigns(:pokemon)).to eq(pokemon)
-    end
-  end
 
   describe "POST #create" do
     context "with valid params" do
