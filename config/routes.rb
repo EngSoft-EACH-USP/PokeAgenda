@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :pokemons
   post '/rate' => 'rater#create', :as => 'rate'
   devise_for :users
   root 'application#index'

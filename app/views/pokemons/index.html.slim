@@ -1,0 +1,27 @@
+h1 Listing pokemons
+
+table
+  thead
+    tr
+      th Index
+      th Name
+      th Type1
+      th Type2
+      th
+      th
+      th
+
+  tbody
+    - @pokemons.each do |pokemon|
+      tr
+        td = pokemon.index
+        td = pokemon.name
+        td = pokemon.type1
+        td = pokemon.type2
+        td = link_to 'Show', pokemon
+        td = link_to 'Edit', edit_pokemon_path(pokemon)
+        td = link_to 'Destroy', pokemon, data: { confirm: 'Are you sure?' }, method: :delete
+
+br
+
+= link_to 'New Pokemon', new_pokemon_path
