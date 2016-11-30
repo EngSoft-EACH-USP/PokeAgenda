@@ -18,6 +18,7 @@ gem 'factory_girl_rails'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 gem 'ratyrate'
+gem 'rails-controller-testing'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -38,7 +39,6 @@ group :test do
   gem 'shoulda-matchers', '~> 3.0'
   gem 'capybara'
   gem 'database_cleaner'
-  gem 'rails-controller-testing'
 end
 
 group :development, :test do
