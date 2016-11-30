@@ -1,15 +1,14 @@
-h1 Listing pokemons
+h2 Pokemons
 
-table
+table.table
   thead
     tr
       th Index
-      th Name
-      th Type1
-      th Type2
+      th Nome
+      th Tipo 1
+      th Tipo 2
       th
-      th
-      th
+    
 
   tbody
     - @pokemons.each do |pokemon|
@@ -18,10 +17,5 @@ table
         td = pokemon.name
         td = pokemon.type1
         td = pokemon.type2
-        td = link_to 'Show', pokemon
-        td = link_to 'Edit', edit_pokemon_path(pokemon)
-        td = link_to 'Destroy', pokemon, data: { confirm: 'Are you sure?' }, method: :delete
-
+        td = link_to 'Visualizar', pokemon
 br
-
-= link_to 'New Pokemon', new_pokemon_path
