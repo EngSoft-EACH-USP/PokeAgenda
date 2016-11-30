@@ -8,6 +8,6 @@ development:
 
 test:
   adapter: postgresql
-  encoding: utf8
+  encoding: SQL_ASCII
   database: pokeagenda_test
   pool: 5
