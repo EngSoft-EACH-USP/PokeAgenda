@@ -38,6 +38,7 @@ group :test do
   gem 'shoulda-matchers', '~> 3.0'
   gem 'capybara'
   gem 'database_cleaner'
+  gem 'rails-controller-testing'
 end
 
 group :development, :test do
