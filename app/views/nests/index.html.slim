@@ -3,6 +3,7 @@ table.table
     thead
         td Id
         td Address
+        td
     tbody
         - @nests.each do |nest|
             tr
@@ -10,5 +11,7 @@ table.table
                     = nest.id
                 td
                     = nest.address
+                td
+                    = link_to 'Visualizar', nest
 
             
