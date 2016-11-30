@@ -19,8 +19,6 @@ require 'capybara/rspec'
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 RSpec.configure do |config|
-  # helper for Devise authentication
-  config.include Devise::Test::ControllerHelpers, :type => :controller
   
   config.include Rails.application.routes.url_helpers if defined? Rails
   # rspec-expectations config goes here. You can use an alternate
@@ -36,6 +34,8 @@ RSpec.configure do |config|
     #     # => "be bigger than 2"
     expectations.include_chain_clauses_in_custom_matcher_descriptions = true
   end
+  
+  
 
   # rspec-mocks config goes here. You can use an alternate test double
   # library (such as bogus or mocha) by changing the `mock_with` option here.
@@ -103,6 +103,8 @@ RSpec.configure do |config|
   Kernel.srand config.seed
 =end
 
+
+
   config.before(:suite) do
      DatabaseCleaner.strategy = :transaction
      DatabaseCleaner.clean_with(:truncation)
@@ -114,3 +116,5 @@ RSpec.configure do |config|
      end
    end
 end
+
+
