@@ -9,7 +9,7 @@ context "As a user", type: :request do
     visit pokemons_path
   end
 
-  scenario "I want view all nests" do
+  scenario "I want view all pokemons" do
     pokemons.each do |pokemon|
       expect(page).to have_content(pokemon.index)
       expect(page).to have_content(pokemon.name)
