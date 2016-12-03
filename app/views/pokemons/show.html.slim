@@ -1,6 +1,8 @@
 p#notice = notice
 
 p
+  = image_tag("pokemons/" + @pokemon.index.to_s + ".gif")
+p
   strong Index:
   = @pokemon.index
 p
